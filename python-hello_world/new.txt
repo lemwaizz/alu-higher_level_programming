@@ -1,0 +1,14 @@
+  2           0 LOAD_CONST               0 (<code object magic_calculation at 0x7fe1d743cdf0, file "102-magic_calculation.py", line 2>)
+              2 LOAD_CONST               1 ('magic_calculation')
+              4 MAKE_FUNCTION            0
+              6 STORE_NAME               0 (magic_calculation)
+              8 LOAD_CONST               2 (None)
+             10 RETURN_VALUE
+
+Disassembly of <code object magic_calculation at 0x7fe1d743cdf0, file "102-magic_calculation.py", line 2>:
+  3           0 LOAD_CONST               1 (98)
+              2 LOAD_FAST                0 (a)
+              4 LOAD_FAST                1 (b)
+              6 BINARY_POWER
+              8 BINARY_ADD
+             10 RETURN_VALUE
