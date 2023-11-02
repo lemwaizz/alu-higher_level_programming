@@ -5,6 +5,8 @@ if  __name__ == '__main__':
     num_of_args = len(argv) - 1
     if num_of_args == 1:
         print("{} argument:".format(num_of_args))
+    elif num_of_args >= 1:
+        print("{} arguments:".format(num_of_args))
     else:
         print("{} arguments:".format(num_of_args))
     values = 1
