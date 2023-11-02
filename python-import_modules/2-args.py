@@ -12,4 +12,4 @@ if __name__ == '__main__':
             print("{}: {}".format(values, arg))
             values += 1
     else:
-        print("{} arguments:".format(num_of_args))
+        print("{} arguments.".format(num_of_args))
