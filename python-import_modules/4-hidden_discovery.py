@@ -5,8 +5,8 @@ if __name__ == '__main__':
     with open('hidden_4.py') as f:
         tree = f.read()
         module = ast.parse(tree)
-        functions = [node for node in module.body if isinstance(node, ast.FunctionDef)]
-        for f in functions:
+        function = [node for node in module.body if isinstance(node, ast.FunctionDef)]
+        for f in function:
             a = str(f.name)
             if a.startswith('__'):
                 pass
