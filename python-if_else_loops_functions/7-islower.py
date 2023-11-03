@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-def islower(c):
-    if ord('c') in range(97,123):
-        return True
-    elif ord('c') in range(65,91):
-        return False
-    else:
-        return False
+if __name__ == '__main__':
+    def islower(c):
+        if ord(c) >= 97 and ord(c) <= 122 :
+            return True
+        else:
+            return False
