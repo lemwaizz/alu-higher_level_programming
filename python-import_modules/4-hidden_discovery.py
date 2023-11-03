@@ -1,17 +1,9 @@
 #!/usr/bin/python3
-import ast
-b = []
+#!/usr/bin/python3
+import hidden_4
 if __name__ == '__main__':
-    with open('hidden_4.py') as f:
-        tree = f.read()
-        module = ast.parse(tree)
-        function = [node for node in module.body if isinstance(node, ast.FunctionDef)]
-        for f in function:
-            a = str(f.name)
-            if a.startswith('__'):
-                pass
-            else:
-                b.append(a)
-        b = sorted(b)
-        for i in range(len(b)):
-            print(b[i])
+    names = dir(hidden_4)
+    names.sort()
+    for name in names:
+        if name[:2] != "__":
+            print(name)
