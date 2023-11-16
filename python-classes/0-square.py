@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-Create an empty square
+Shebang for python 3
 """
 
 
-class square:
+class Square:
     '''creates an empty square'''
     pass
