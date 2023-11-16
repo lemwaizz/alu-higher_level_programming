@@ -3,5 +3,5 @@
 
 
 class square:
-    """creates an empty square class"""
+    '''creates an empty square class'''
     pass
