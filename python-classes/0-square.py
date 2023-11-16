@@ -5,3 +5,4 @@
 class square:
     '''creates an empty square class'''
     pass
+    '''pass method used to keep class empty'''
