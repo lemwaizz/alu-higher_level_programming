@@ -38,4 +38,4 @@ class Square:
         if self.__size == 0:
             print('\n')
         elif self.__size > 0:
-            print("#"+"{}".format(self.__size))
+            print("#", end="")
