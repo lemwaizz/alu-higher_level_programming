@@ -8,4 +8,4 @@ class Square:
     '''creates an empty square'''
     def __init__(self,size):
         """instatiate size"""
-        self.size=size
+        self.__size=size
