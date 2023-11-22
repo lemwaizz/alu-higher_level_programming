@@ -25,6 +25,11 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
+    def __init__(self, size=0, position=(0, 0)):
+        """Initializes the data."""
+        self.size = size
+        self.position = position
+
     @property
     def position(self):
         """retrieve position attribute"""
