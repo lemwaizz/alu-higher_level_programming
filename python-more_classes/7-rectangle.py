@@ -66,10 +66,10 @@ class Rectangle:
             rect = ""
             for i in range(self.__height):
                 for j in range(self.__width):
-                    rect = rect + "#"
+                    rect = rect + str(self.print_symbol)
                 rect += "\n"
         return rect[:-1]
 
     def __repr__(self):
         """return string representation of rectangle"""
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.print_symbol, self.print_symbol)
