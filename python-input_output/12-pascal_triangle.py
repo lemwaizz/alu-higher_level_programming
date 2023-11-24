@@ -5,7 +5,7 @@
 
 def pascal_triangle(n):
     """function itself"""
-    res = []
+    res = [[1]]
     if n < 0:
         return res
     else:
