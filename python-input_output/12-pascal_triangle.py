@@ -5,14 +5,13 @@
 
 def pascal_triangle(n):
     """function itself"""
-    n = 5
-    list = []
-    for i in range(n+1):
-        for j in range(0, n-i):
-            C = 1
-            for j in range(1, i+1):
-                C = C * (i - j) // j
-        list.append(C)
-        return list
+    res = [1]
     if n < 0:
         return []
+    else:
+        for i in range(n - 1):
+            temp = [0] + res[-1] + [0]
+            row = []
+            for j in range(len(res[-1]) + 1):
+                row.append(temp[j] + temp[j + 1])
+            return row
