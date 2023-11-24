@@ -27,7 +27,7 @@ class Student:
             cont = {}
             for item in attrs:
                 if type(item) != str:
-                    return context
-                if item in context.keys():
-                    cont[item] = context[item]
+                    return dictionary
+                if item in dictionary.keys():
+                    cont[item] = dictionary[item]
             return cont
