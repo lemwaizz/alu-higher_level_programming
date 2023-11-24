@@ -14,3 +14,5 @@ def pascal_triangle(n):
                 C = C * (i - j) // j
         list.append(C)
         return list
+    if n < 0:
+        return []
