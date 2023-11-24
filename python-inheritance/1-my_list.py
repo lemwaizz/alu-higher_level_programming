@@ -10,4 +10,4 @@ class MyList(list):
         """sorts list"""
         sorted_list = self[:]
         sorted_list.sort()
-        return sorted_list
+        print("{}".format(sorted_list))
