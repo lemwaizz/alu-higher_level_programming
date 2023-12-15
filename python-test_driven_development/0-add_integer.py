@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""module for addition"""
+
+
 def add_integer(a, b=98):
     """function for adding integers
        Args:
@@ -10,9 +13,7 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if type(a) != int:
         raise TypeError("b must be an integer")
-    if type(a) == int and type(b) == int:
-        return a + b
-    elif type(a) == float or type(b) == float:
-        a_1 = int(a)
-        b_1 = int(b)
-        return a_1 + b_1
+    if type(a) == float or type(b) == float:
+        int(a)
+        int(b)
+    return a + b
