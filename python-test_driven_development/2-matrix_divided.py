@@ -5,9 +5,7 @@ function that divides all elements of a matrix
 
 
 def matrix_divided(matrix, div):
-    """
-    Function that divides all elements of a matrix
-    """
+    """Function that divides all elements of a matrix """
     for i in matrix:
         if type(i) != list:
             raise TypeError("matrix must be a matrix (list of lists)"
