@@ -12,4 +12,5 @@ def print_square(size):
         raise TypeError("size must be an integer")
     character = "#"
     for i in range(size):
-        print(character, end='')
+        for j in range(size):
+            print(character, end='')
