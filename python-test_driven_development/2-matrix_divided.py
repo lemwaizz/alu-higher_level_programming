@@ -4,6 +4,9 @@
 
 def matrix_divided(matrix, div):
     """Function that divides all elements of a matrix """
+    if not isinstance(matrix, list):
+        raise TypeError("matrix must be a matrix (list of lists) "
+                        "of integers/floats")
     for i in matrix:
         if type(i) != list:
             raise TypeError("matrix must be a matrix (list of lists)"
