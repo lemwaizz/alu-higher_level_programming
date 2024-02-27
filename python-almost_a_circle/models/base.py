@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""This is class base"""
+
 
 class Base:
     """initialize empty class base"""
