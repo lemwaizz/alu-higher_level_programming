@@ -50,3 +50,35 @@ if __name__ == "__main__":
             if value <= 0:
                 raise ValueError("Height must be greater than 0.")
             self.__height = value
+
+        @property
+        def x(self):
+            """property getter for x"""
+
+            return self.__x
+
+        @x.setter
+        def x(self, value):
+            """setting for x"""
+
+            if type(x) != int:
+                raise TypeError("x must be an integer.")
+            if x <= 0:
+                raise ValueError("x must be greater than 0.")
+            self.__x = value
+
+        @property
+        def y(self):
+            """Getter for y"""
+
+            return self.__y
+
+        @y.setter
+        def y(self, value):
+            """setter for y"""
+
+            if type(y) != int:
+                raise TypeError("y must be an integer.")
+            if y <= 0:
+                raise ValueError("y must be greater than 0.")
+            self.__y = value
