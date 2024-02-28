@@ -81,3 +81,24 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0.")
         self.__y = value
+
+    def update(self, *args, **kwargs):
+        """validate setter methods"""
+        if len(args) != 0:
+            try:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
+            except IndexError:
+                pass
+
+        if len(kwargs) != 0:
+            self.id = kwargs["id"] if "id" in kwargs else self.id
+            self.__width = kwargs["width"] if "width" in kwargs \
+                else self.__width
+            self.__height = kwargs["height"] if "height" in kwargs \
+                else self.__height
+            self.__x = kwargs["x"] if "x" in kwargs else self.__x
+            self.__y = kwargs["y"] if "y" in kwargs else self.__y
