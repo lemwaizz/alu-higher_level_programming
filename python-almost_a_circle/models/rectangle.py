@@ -29,7 +29,7 @@ class Rectangle(Base):
         """setting width to trust it then push it"""
 
         if type(value) != int:
-            raise TypeError("Width must be an integer.")
+            raise TypeError("Width must be an integer")
         if value <= 0:
             raise ValueError("Width must be > 0")
         self.__width = value
@@ -45,9 +45,9 @@ class Rectangle(Base):
         """setting conditions for value"""
 
         if type(value) != int:
-            raise TypeError("Height must be an integer.")
+            raise TypeError("Height must be an integer")
         if value <= 0:
-            raise ValueError("Height must be > 0.")
+            raise ValueError("Height must be > 0")
         self.__height = value
 
     @property
@@ -60,8 +60,10 @@ class Rectangle(Base):
     def x(self, value):
         """setting for x"""
 
-        if x < 0:
-            raise ValueError("x must be >= 0.")
+        if type(value) != int:
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -74,6 +76,8 @@ class Rectangle(Base):
     def y(self, value):
         """setter for y"""
 
-        if y < 0:
+        if type(value) != int:
+            raise TypeError("y must be an integer")
+        if value < 0:
             raise ValueError("y must be >= 0.")
         self.__y = value
