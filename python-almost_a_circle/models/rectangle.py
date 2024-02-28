@@ -84,6 +84,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """validate setter methods"""
+
         if len(args) != 0:
             try:
                 self.id = args[0]
