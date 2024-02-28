@@ -45,7 +45,7 @@ if __name__ == "__main__":
         def height(self, value):
             """setting conditions for value"""
 
-            if value not isinstance(value, int):
+            if type(value) != int:
                 raise TypeError("Height must be an integer.")
             if value <= 0:
                 raise ValueError("Height must be greater than 0.")
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         def x(self, value):
             """setting for x"""
 
-            if type(x) != int:
+            if type(value) != int:
                 raise TypeError("x must be an integer.")
             if x <= 0:
                 raise ValueError("x must be greater than 0.")
@@ -77,7 +77,7 @@ if __name__ == "__main__":
         def y(self, value):
             """setter for y"""
 
-            if type(y) != int:
+            if type(value) != int:
                 raise TypeError("y must be an integer.")
             if y <= 0:
                 raise ValueError("y must be greater than 0.")
