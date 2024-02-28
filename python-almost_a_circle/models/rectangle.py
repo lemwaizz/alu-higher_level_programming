@@ -29,9 +29,9 @@ class Rectangle(Base):
         """setting width to trust it then push it"""
 
         if type(value) != int:
-            raise TypeError("Width must be an integer")
+            raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("Width must be > 0")
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -45,9 +45,9 @@ class Rectangle(Base):
         """setting conditions for value"""
 
         if type(value) != int:
-            raise TypeError("Height must be an integer")
+            raise TypeError("height must be an integer")
         if value <= 0:
-            raise ValueError("Height must be > 0")
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
@@ -94,7 +94,7 @@ class Rectangle(Base):
             except IndexError:
                 pass
 
-        if len(kwargs) != 0:
+        elif len(kwargs) != 0:
             self.id = kwargs["id"] if "id" in kwargs else self.id
             self.__width = kwargs["width"] if "width" in kwargs \
                 else self.__width
