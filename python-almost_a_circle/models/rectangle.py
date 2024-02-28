@@ -13,10 +13,10 @@ class Rectangle(Base):
         """This is a class constructor"""
 
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -88,18 +88,18 @@ class Rectangle(Base):
         if len(args) != 0:
             try:
                 self.id = args[0]
-                self.__width = args[1]
-                self.__height = args[2]
-                self.__x = args[3]
-                self.__y = args[4]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
             except IndexError:
                 pass
 
         elif len(kwargs) != 0:
             self.id = kwargs["id"] if "id" in kwargs else self.id
-            self.__width = kwargs["width"] if "width" in kwargs \
-                else self.__width
-            self.__height = kwargs["height"] if "height" in kwargs \
-                else self.__height
-            self.__x = kwargs["x"] if "x" in kwargs else self.__x
-            self.__y = kwargs["y"] if "y" in kwargs else self.__y
+            self.width = kwargs["width"] if "width" in kwargs \
+                else self.width
+            self.height = kwargs["height"] if "height" in kwargs \
+                else self.height
+            self.x = kwargs["x"] if "x" in kwargs else self.x
+            self.y = kwargs["y"] if "y" in kwargs else self.y
